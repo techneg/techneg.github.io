@@ -1,0 +1,336 @@
+
+:root{
+    --blue:#AA77FF;
+}
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: all .2s linear;
+}
+*::selection{
+    background-color: var(--blue);
+    color:#C9EEFF;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+section{
+    padding:2rem 9%;
+}
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.heading span{
+    font-size: 3.5rem;
+    background:#97DEFF;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    display: inline-block;
+}
+.heading span.space{
+    background: none;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    color: #782cf2;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--blue);
+    border-radius: 2rem;
+    cursor:pointer;
+}
+.btn:hover{
+    background: #782cf2;
+    color: #782cf2;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #AA77FF;  
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 2rem 9%;
+}
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+header .logo span{
+    color: #782cf2;
+}
+header .navbar a{
+    color: #fff;
+    font-size: 2rem;
+    margin: .8rem;
+
+}
+header .navbar a:hover{
+    color: #AA77FF;
+}
+header .icon i{
+    font-size: 2.5rem;
+    color: #C9EEFF;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+header .icon i:hover{
+    color: #AA77FF;
+}
+header .search-bar-container{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background: #AA77FF;
+    border-top: .1rem solid#97DEFF;
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar{
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+header .search-bar-container label{
+    color: #97DEFF;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover{
+    color: #62CDFF;
+}
+.login-form-container{
+    position: fixed;
+    top: -120%; 
+    left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background: #97deff9f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-form-container.active{
+    top: 0;
+}
+
+.login-form-container form{
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    width: 50rem;
+}
+.login-form-container form h3{
+    font-size: 3rem;
+    color: #AA77FF;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+.login-form-container form .box{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #AA77FF;
+    margin: .6rem 0;
+    border: .1rem solid rgba(rgb(0, 149, 255), green, blue, alpha);
+    text-transform: none;
+}
+.login-form-container form .box:focus{
+    border-color: #782cf2;
+}
+.login-form-container form .btn{
+    display: block;
+    width: 100%;
+}
+.login-form-container form p{
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: #97DEFF;
+}
+.login-form-container form p a{
+    color: var(--blue);
+}
+.login-form-container form p a:hover{
+    color: #97DEFF;
+    text-decoration: underline;
+}
+.login-form-container #form-close{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+    color: #782cf2;
+    cursor: pointer;
+}
+
+#menu-bar{
+    color: #fff;
+    border: .1rem solid #fff;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    position: relative; 
+    z-index: 0;
+}
+.home .content{
+    text-align: center;
+}
+.home .content h3{
+    font-size: 4.5rem;
+    color: #97DEFF;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem #782cf2;
+    
+}
+.home .content p{
+    font-size: 2.5rem;
+    color: #97DEFF;
+    padding: .5rem 0;
+}
+.home .video-container video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.home .controls{
+    padding:1rem;
+    border-radius: 5rem;
+    background: #782cf2;
+    position: relative;
+    top: 10rem;
+}
+.home .controls .vid-btn{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #97DEFF;
+    cursor: pointer;
+    margin: 0 .5rem;
+}
+.home .controls .vid-btn.active{
+    background: #f2a32c;
+}
+
+.book .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+.book .row .img img{
+    width: 100%;
+    height: 500px;
+}
+.book .row form{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem #0b202a;
+    border-radius: .5rem;
+}
+.book .row form .inputBox{
+    padding: .5rem 0;
+}
+.book .row form .inputBox input{
+    width: 100%;
+    padding: 1rem;
+    border: #782cf2;
+    font-size: 1.7rem;
+    color: #97DEFF;
+    text-transform: none;
+}
+
+
+/* media quries */
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:991px){
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+@media(max-width:768px){
+    #menu-bar{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #97DEFF;
+        border-top: .1rem solid #AA77FF;
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+    }
+    header .navbar a{
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #782cf2;
+    }
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading span{
+        font-size: 2.5rem;
+    }
+}
+
