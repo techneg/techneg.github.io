@@ -5,10 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <script
       src="https://kit.fontawesome.com/90489c8f29.js"
       crossorigin="anonymous"
     ></script>
+
 
     <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/90489c8f29.css" crossorigin="anonymous"> -->
     <title>Hostel Web</title>
@@ -20,9 +22,10 @@
       <a href="#" class="logo"><span>H</span>ostel</a>
       <nav class="navbar">
         <a href="#Home">Home</a>
-        <a href="#Hostel">Hostels</a>
-        <a href="#service">Service</a>
-        <a href="#Booking">Booking</a>
+        <a href="hall.html">Halls</a>
+        <a href="gallary.html">Gallary</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">contact</a>
       </nav>
       <div class="icon">
         <!-- <i class="fa-thin fa-square-xmark"></i> -->
@@ -48,9 +51,7 @@
         <input type="checkbox" name="" id="remember">
         <label for="remember">Remember me</label>
         <p>forget password? <a href="#">Click here</a></p>
-        <p>Don't have an account? <a href="#">Register now</a></p>
-        
-        
+        <p>Don't have an account? <a href="regs.php">Register now</a></p>
       </form>
     </div>
 
@@ -74,48 +75,134 @@
       </div>
 
     </section>
-    <!-- home section start here -->
+    <!-- home section ends here -->
 
-    <!-- book section start here -->
-    <section class="book" id="book">
-      <h1 class="heading">
-        <span>b</span>
-        <span>o</span>
-        <span>o</span>
-        <span>k</span>
-        <span class="space"></span>
-        <span>n</span>
-        <span>o</span>
-        <span>w</span>
-      </h1>
-      <div class="row">
-        <div class="img">
-          <img src="assets/img/img1.svg" alt="" srcset="">
+<!-- Service section start here -->
+<section class="services" id="services"  >
+  <h1 class="heading">
+    <span>S</span>
+    <span>e</span>
+    <span>r</span>
+    <span>v</span>
+    <span>i</span>
+    <span>c</span>
+    <span>e</span>
+    <span>s</span>
+    <!-- <span class="space"></span> -->
+  </h1>
+
+  <div class="box-container">
+    <div class="box">
+      <i class="fa-solid fa-hotel"></i>
+      <h3>Affordable Accomodation</h3>
+      <p>Welcome to AAMUSTED hall where affordable accomodation is ashured</p>
+    </div>
+
+    <div class="box">
+      <i class="fa-solid fa-hotel"></i>
+      <h3>Affordable Accomodation</h3>
+      <p>Welcome to AAMUSTED hall where affordable accomodation is ashured</p>
+    </div>
+    <div class="box">
+      <i class="fa-light fa-plane"></i>
+      <h3>Affordable Accomodation</h3>
+      <p>Welcome to AAMUSTED hall where affordable accomodation is ashured</p>
+    </div>
+    <div class="box">
+      <i class="fa-regular fa-person-biking-mountain"></i>
+      <h3>Affordable Accomodation</h3>
+      <p>Welcome to AAMUSTED hall where affordable accomodation is ashured</p>
+    </div>
+    
+  </div>
+
+</section>
+
+<!-- Service section ends here -->
+
+
+<!-- review start here -->
+<div class="review" id="review">
+  <h1 class="heading">
+    <span>R</span>
+    <span>e</span>
+    <span>v</span>
+    <span>i</span>
+    <span>e</span>
+    <span>w</span>
+  </h1>
+  <div class="swiper mySwiper review-slider">
+    <div class="swiper-wrapper wrapper">
+      <div class="swiper-slide">
+        <div class="box">
+          <img src="assets/img/vic.jpg" alt="" srcset="">
+          <h3>Victoria</h3>
+          <p>Sereen accomodation and secicurity for you study purposes</p>
+          <div class="stars">
+            <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            
+          </div>
         </div>
-        <form action="">
-          <div class="inputBox">
-            <h3>Where to</h3>
-            <input type="text" placeholder="place name" >
-          </div>
-          <div class="inputBox">
-            <h3>how many</h3>
-            <input type="number" placeholder="number of guest">
-          </div>
-          <div class="inputBox">
-            <h3>Arrival</h3>
-            <input type="date">
-          </div>
-          <div class="inputBox">
-            <h3>leaving</h3>
-            <input type="date" >
-          </div>
-          <input type="submit" class="btn" value="Book Now">
-          
-        </form>
       </div>
-    </section>
-    <!-- book section end here -->
+      <div class="swiper-slide">
+        <div class="box">
+          <img src="assets/img/brg.jpg" alt="" srcset="">
+          <h3>Bridget</h3>
+          <p>Sereen accomodation and secicurity for you study purposes</p>
+          <div class="stars">
+            <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="box">
+          <img src="assets/img/docas.jpg" alt="" srcset="">
+          <h3>Docas</h3>
+          <p>Sereen accomodation and secicurity for you study purposes</p>
+          <div class="stars">
+            <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="box">
+          <img src="assets/img/sam.jpg" alt="" srcset="">
+          <h3>Docas</h3>
+          <p>Sereen accomodation and secicurity for you study purposes</p>
+          <div class="stars">
+            <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
 
+<!-- review ends here -->
+<!-- ----------------------contact---------------- -->
+<div class="copyright">
+  <p>copyright &copy; Samuel <i class="fa-solid fa-heart"></i></p>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
