@@ -284,7 +284,236 @@ header .search-bar-container label:hover{
     color: #97DEFF;
     text-transform: none;
 }
+.book .row form .inputBox h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #AA77FF;
+}
+.packages .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.packages .box-container .box{
+    flex: 1 1 30rem ;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem #0b202a;
+}
 
+.packages .box-container .box img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+.packages .box-container .box .content{
+    padding: 2rem;
+}
+.packages .box-container .box .content h3{
+    font-size: 2rem;
+    color: #AA77FF;
+}
+.packages .box-container .box .content h3 i{
+    color: #782cf2;
+}
+.packages .box-container .box .content p{
+    font-size: 1.5rem;
+    color: #AA77FF;
+    padding: 1rem 0;
+}
+.packages .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: #AA77FF;
+}
+
+.packages .box-container .box .content .price{
+    font-size: 2rem;
+    color: #62CDFF;
+    padding: 1rem;
+}
+.packages .box-container .box .content span{
+    color: #782cf2;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+/* -----------------------Serveices--------- */
+.services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+.services .box-container .box{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+.services .box-container .box i{
+    padding: 1rem;
+    font-size: 5rem;
+    color: #782cf2;
+}
+.services .box-container .box h3{
+    font-size: 2.5rem;
+    color: #62CDFF;
+
+}
+.services .box-container .box p{
+    font-size: 1.5rem;
+    color: #AA77FF;
+    padding: 1rem 0;
+}
+.services .box-container .box:hover{
+    box-shadow: #18aff55c;
+}
+
+/* -------------gallery---------------- */
+
+.gallary .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.gallary .box-container .box{
+    overflow: hidden;
+    box-shadow: rgb(0, 149, 255);
+    border: 1rem solid #fff;
+    border-radius: 2.5rem;
+    flex: 1 1 30rem;
+    height: 25rem;
+    position: relative;
+}
+.gallary .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gallary .box-container .box .content{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: #97deffb5;
+    padding: 2rem;
+    padding-top: 5rem;
+}
+.gallary .box-container .box:hover .content{
+    top: 0;
+}
+.gallary .box-container .box .content h3{
+    font-size: 2.5;
+    color: #782cf2;
+}
+.gallary .box-container .box .content p{
+    font-size: 1.5;
+    color: #e7e3ed;
+}
+/* -------------review------------ */
+.review .review-slider{
+    padding-bottom: 2rem;
+}
+.review .box{
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem #782cf296;
+    border-radius: 5rem;
+}
+.review .box img{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.review .box h3{
+    color: #782cf2;
+    font-size: 2.5rem;
+}
+.review .box p{
+    color: #62CDFF;
+    font-size: 1.5rem;
+}
+.review .box .stars{
+    color: #782cf2;
+    font-size: 1.7rem;
+}
+/* ------------------contact-------------*/
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.right-contact{
+    flex: 1 1 35rem;
+}
+.left-contact{
+    flex: 1 1 35rem;
+}
+.left-contact p{
+    margin-top: 30px;
+    font-size: 2rem;
+
+}
+.left-contact p i{
+    margin-right: 15px;
+    color: #ff004f;
+    font-size: 25px;
+}
+.socialicons{
+    margin-top: 30px;
+}
+.socialicons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.socialicons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background:#ff004f;
+}
+.right-contact form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 2rem;
+    color: #782cf2;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #ff004f;
+}
 
 /* media quries */
 @media(max-width:1200px){

@@ -39,3 +39,23 @@ VideoBtn.forEach(btn =>{
         document.querySelector('#video-slider').src = src;
     });
 });
+
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 20,
+    loop: true,
+    autoplay:{
+        delay:2500,
+        disableOnIneraction:false,
+    },
+    breakpoints:{
+        640:{
+            slidesPerView: 1,
+        },
+        768:{
+            slidesPerView: 2,
+        },
+        1024:{
+            slidesPerView: 3,
+        },
+    },
+});
